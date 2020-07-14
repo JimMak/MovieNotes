@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MovieNotes</string>
+
+    <string-array name="Categories">
+        <item>Action</item>
+        <item>Adventure</item>
+        <item>Thriller</item>
+        <item>Comedy</item>
+    </string-array>
+</resources>
