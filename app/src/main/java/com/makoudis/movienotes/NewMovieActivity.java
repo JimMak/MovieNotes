@@ -25,7 +25,7 @@ public class NewMovieActivity extends AppCompatActivity {
 
         String[] categories = getResources().getStringArray(R.array.Categories);
 
-        ArrayAdapter adapter = new ArrayAdapter(NewMovieActivity.this,R.layout.category_item,categories);
+        ArrayAdapter adapter = new ArrayAdapter(NewMovieActivity.this,R.layout.category_item, R.id.txtVw_catItem ,categories);
         spn_cat.setAdapter(adapter);
 
         btn_save.setOnClickListener(new View.OnClickListener() {

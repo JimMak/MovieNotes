@@ -22,14 +22,14 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         this.context = context;
     }
 
-    @NonNull
+   /* @NonNull
     @Override
     public MyAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(context);
         View row  = inflater.inflate(R.layout.category_item, parent, false);
         MyViewHolder item = new MyViewHolder(row);
         return item;
-    }
+    }*/
 
     @NonNull
     @Override

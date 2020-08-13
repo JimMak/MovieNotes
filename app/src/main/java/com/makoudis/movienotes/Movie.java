@@ -28,6 +28,24 @@ public class Movie {
 
     }
 
+    public Movie(int id, Context context){
+        SQLliteHelper helper = new SQLliteHelper(context);
+        SQLiteDatabase database = helper.getWritableDatabase();
+
+        String[] args = {String.valueOf(id)};
+
+        Cursor cursor = database.query(SQLliteHelper.TABLE_MOVIES, columns, "id = ?", args, null, null, null);
+
+        cursor.moveToFirst();
+
+        this.id = cursor.getInt(0);
+        this.title = cursor.getString(1);
+        this.category = cursor.getString(2);
+        this.grade = cursor.getInt(3);
+        this.notes = cursor.getString(4);
+
+    }
+
 
     public int getId() {
         return id;
